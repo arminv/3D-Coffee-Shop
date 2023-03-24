@@ -28,7 +28,6 @@ const CoffeeShop = (props: CoffeShopProps) => {
         />
       </group>
       <mesh
-        castShadow
         receiveShadow
         geometry={nodes.Plane011.geometry}
         material={materials['Material.001']}
@@ -50,7 +49,6 @@ const CoffeeShop = (props: CoffeShopProps) => {
       />
       <mesh
         castShadow
-        receiveShadow
         geometry={nodes.Plane008.geometry}
         material={materials['Material.009']}
         scale={4}
@@ -61,6 +59,7 @@ const CoffeeShop = (props: CoffeShopProps) => {
         material={materials['Material.009']}
         scale={4}
       />
+      {/* House */}
       <mesh
         castShadow
         geometry={nodes.Text001.geometry}
@@ -69,6 +68,7 @@ const CoffeeShop = (props: CoffeShopProps) => {
         rotation={[Math.PI / 2, 0, 0]}
         scale={0.84}
       >
+        {/* Cup handle */}
         <mesh
           castShadow
           geometry={nodes.Plane003_1.geometry}
@@ -91,52 +91,52 @@ const CoffeeShop = (props: CoffeShopProps) => {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={4.78}
         >
+          {/* Walls */}
           <mesh
             castShadow
+            receiveShadow
             geometry={nodes.Plane002.geometry}
             material={nodes.Plane002.material}
             scale={0.25}
           />
           <mesh
             castShadow
+            receiveShadow
             geometry={nodes.Plane004.geometry}
             material={materials['Material.003']}
           />
+          {/* Window Frames */}
           <mesh
             castShadow
             geometry={nodes.Plane006.geometry}
             material={materials['Material.005']}
           />
+          {/* Door Frame */}
           <mesh
             castShadow
             geometry={nodes.Plane007.geometry}
             material={materials['Material.005']}
           />
+          {/* Purple Floorboard */}
           <mesh
             castShadow
+            receiveShadow
             geometry={nodes.Plane019_1.geometry}
             material={materials['Material.004']}
           />
+          {/* Door & Windows Glass */}
           <mesh
-            castShadow
             geometry={nodes.Plane020.geometry}
             material={materials['Material.006']}
           />
           <mesh
             castShadow
+            receiveShadow
             geometry={nodes.Plane021.geometry}
             material={materials['Material.003']}
             scale={0.25}
           />
         </mesh>
-        <mesh
-          castShadow
-          geometry={nodes.Plane012.geometry}
-          material={materials['Material.007']}
-          position={[3.86, -2.08, 7.31]}
-          rotation={[-Math.PI / 2, 0, 0]}
-          scale={4.78}
-        />
         <mesh
           castShadow
           geometry={nodes.Plane013.geometry}

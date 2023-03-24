@@ -1,10 +1,10 @@
-import { useRef } from 'react';
-import { PointLightHelper } from 'three';
+import { useRef, Ref } from 'react';
+import { PointLight, PointLightHelper } from 'three';
 import { OrbitControls, SpotLight, Stars, useHelper } from '@react-three/drei';
 import CoffeeShop from './CoffeeShop';
 
 const Scene = () => {
-  const pointLight = useRef();
+  const pointLight = useRef() as Ref<PointLight>;
   //   useHelper(pointLight, PointLightHelper, 0.5, 'cyan');
 
   return (

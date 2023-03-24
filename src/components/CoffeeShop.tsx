@@ -85,7 +85,6 @@ const CoffeeShop = (props: CoffeShopProps) => {
         </mesh>
         <mesh
           castShadow
-          receiveShadow
           geometry={nodes.Plane005.geometry}
           material={materials['Material.008']}
           position={[3.86, -2.08, 7.31]}
